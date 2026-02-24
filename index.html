@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bravynex Engineering LLP - Data Assessment Portal</title>
+<title>Bravynex Engineering LLP - Data Engineering Lab</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap');
@@ -43,9 +43,8 @@
   .certificate { background: #fff; color: #000; width: 900px; padding: 60px; border: 20px solid var(--cert-border); text-align: center; font-family: 'Georgia', serif; box-shadow: 0 0 50px rgba(0,0,0,0.5); }
   .cert-title { font-size: 50px; margin-bottom: 20px; color: var(--cert-border); font-weight: 900; }
   .cert-name { font-size: 38px; border-bottom: 2px solid #000; display: inline-block; padding: 0 40px; margin: 25px 0; font-style: italic; font-weight: 700; }
-  .cert-footer { margin-top: 60px; display: flex; justify-content: center; align-items: center; flex-direction: column; }
-  .signature-box { width: 300px; text-align: center; border-top: 1px solid #000; margin-top: 20px; }
-  .sign-img { width: 180px; height: auto; mix-blend-mode: multiply; filter: contrast(150%); margin-bottom: -10px; }
+  .cert-footer { margin-top: 40px; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+  .signature-box { width: 300px; text-align: center; border-top: 1px solid #000; margin-top: 5px; font-weight: bold; font-family: sans-serif; font-size: 14px; }
   .save-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--panel); padding: 15px 40px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; z-index: 100; }
   .finish-btn { padding: 10px 25px; background: var(--success); color: #000; border: none; font-weight: 700; cursor: pointer; border-radius: 4px; }
   .score-badge { background: rgba(80, 250, 123, 0.1); padding: 5px 15px; border-radius: 4px; border: 1px solid var(--primary); color: var(--primary); font-family: 'JetBrains Mono'; font-weight: bold; }
@@ -94,18 +93,31 @@
     <div class="cert-name" id="displayCertName">STUDENT NAME</div>
     <div style="font-size: 18px; line-height: 1.6; margin: 25px 0;">Has completed the examination in<br><strong>Data Engineering & Analytics</strong><br>with a score of <span id="finalScoreVal"></span>.</div>
     <div class="cert-footer">
-      <img src="pic.jpeg" class="sign-img">
-      <div class="signature-box"></div>
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="160" height="100" viewBox="0 0 294 182" preserveAspectRatio="xMidYMid meet">
+        <g transform="translate(0,182) scale(0.1,-0.1)" fill="#000" stroke="none">
+          <path d="M820 1560 c8 -5 20 -10 25 -10 6 0 3 5 -5 10 -8 5 -19 10 -25 10 -5 0 -3 -5 5 -10z"/><path d="M1010 1546 c0 -2 7 -7 16 -10 8 -3 12 -2 9 4 -6 10 -25 14 -25 6z"/>
+          <path d="M864 1510 c-87 -43 -159 -198 -199 -424 -8 -49 -15 -112 -15 -141 0 -51 -1 -53 -31 -59 -17 -3 -71 -6 -119 -6 -64 0 -89 -4 -93 -13 -11 -28 7 -34 80 -26 57 6 84 4 125 -9 51 -17 52 -18 65 -71 8 -30 10 -57 6 -61 -4 -5 -55 -15 -113 -23 -150 -23 -391 -74 -403 -86 -8 -8 -8 -14 -1 -21 8 -8 47 -3 130 15 145 31 351 61 359 53 7 -6 -129 -286 -147 -303 -7 -7 -9 -1 -4 17 7 29 -4 37 -21 16 -28 -36 -20 -124 10 -112 18 7 91 141 153 281 27 62 54 113 59 113 6 0 28 -18 50 -40 21 -21 53 -46 72 -55 29 -14 33 -20 33 -56 0 -36 2 -40 23 -37 17 2 23 11 27 38 4 28 10 36 31 38 25 3 25 2 22 -62 -3 -60 -2 -64 17 -59 17 5 20 14 20 68 l0 63 44 26 c24 14 63 45 88 68 l44 43 144 4 c80 2 216 5 302 5 109 1 161 5 169 13 10 10 9 25 -5 74 -9 34 -15 63 -14 64 2 2 237 38 411 62 29 4 36 3 33 -8 -2 -8 -7 -40 -10 -72 -6 -56 -6 -58 16 -55 21 3 23 8 20 48 -2 25 1 58 7 73 9 22 17 27 45 27 20 0 79 7 133 15 219 32 324 45 372 45 28 0 51 4 51 10 0 5 7 7 16 3 12 -4 15 -1 12 13 -3 17 -14 19 -97 22 -80 2 -92 1 -82 -11 9 -12 2 -15 -41 -21 -29 -3 -82 -10 -118 -15 -36 -5 -171 -23 -300 -40 -129 -17 -289 -40 -355 -50 -66 -10 -124 -15 -128 -11 -4 4 -8 16 -7 26 0 10 3 73 6 138 7 125 -5 196 -31 196 -32 0 -47 -164 -24 -271 10 -46 9 -54 -8 -78 -24 -31 -61 -46 -94 -38 -24 6 -25 9 -21 77 6 100 -25 164 -60 123 -16 -20 -15 -131 2 -173 7 -18 9 -34 4 -39 -13 -11 -95 -33 -101 -27 -3 3 -6 40 -7 83 -1 57 -6 86 -19 106 -25 39 -55 35 -73 -10 -18 -42 -12 -91 17 -142 11 -18 17 -36 14 -40 -4 -3 -37 -11 -74 -16 l-68 -11 4 66 c5 71 -18 135 -47 135 -32 0 -63 -151 -41 -194 9 -16 2 -19 -56 -30 -36 -6 -66 -11 -67 -9 -1 2 0 27 2 56 4 51 5 53 30 50 24 -3 30 4 59 61 18 36 30 68 28 72 -3 3 3 22 13 40 23 46 22 275 -2 347 -21 61 -76 115 -139 136 -62 21 -84 20 -133 -4z m151 -36 c42 -17 82 -65 94 -112 12 -45 24 -133 15 -112 -11 26 -37 50 -54 50 -30 0 -80 -65 -101 -130 -23 -73 -23 -98 -6 -167 13 -49 13 -52 -7 -57 -44 -12 -46 -9 -41 67 16 263 16 267 1 267 -16 0 -26 -21 -26 -58 0 -37 -110 -301 -129 -311 -9 -5 -31 -11 -48 -14 l-33 -6 0 52 c1 172 89 447 167 518 15 15 35 29 43 32 20 8 85 -2 125 -19z m81 -236 c11 -35 11 -128 -1 -182 -10 -44 -34 -76 -58 -76 -13 0 0 122 13 130 6 4 9 22 6 41 -2 25 -8 34 -22 34 -17 0 -20 -12 -29 -103 -11 -116 -25 -126 -24 -18 0 79 12 120 48 165 28 37 57 40 67 9z m634 -217 c-5 -17 -8 6 -8 64 l1 90 7 -64 c4 -36 4 -76 0 -90z m-842 3 c-4 -48 -9 -88 -11 -91 -11 -10 -67 -21 -67 -12 0 16 73 189 80 189 3 0 2 -39 -2 -86z m664 -71 c3 -29 1 -53 -3 -53 -5 0 -9 17 -9 38 0 20 -3 48 -6 62 -5 17 -3 22 3 15 6 -5 13 -34 15 -62z m-162 -50 c0 -29 -4 -53 -9 -53 -12 0 -35 69 -33 98 6 72 42 33 42 -45z m-332 12 c-13 -29 -26 -32 -35 -9 -6 16 12 34 34 34 10 0 10 -6 1 -25z m130 -76 c-2 -40 -7 -55 -15 -52 -17 7 -20 61 -6 128 l6 30 9 -25 c5 -13 8 -50 6 -81z m-203 9 c-8 -107 -7 -105 -49 -110 -41 -5 -41 -3 -30 111 7 58 9 62 38 70 17 5 35 10 39 10 5 1 5 -36 2 -81z m-112 -30 c-3 -46 -7 -85 -9 -87 -2 -2 -17 8 -34 22 -16 14 -39 28 -50 32 -24 8 -25 17 -4 60 15 32 47 52 86 54 14 1 15 -9 11 -81z m-210 41 c-4 -15 -9 -17 -17 -9 -8 8 -7 13 4 20 8 5 16 10 17 10 0 0 -1 -9 -4 -21z m97 17 c0 -9 -23 -66 -26 -66 -3 0 -16 7 -29 16 -35 23 -31 42 8 47 17 2 35 5 40 5 4 1 7 0 7 -2z m970 -6 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10 -10z m34 -141 c-3 -5 -103 -9 -222 -10 -119 0 -250 -4 -290 -8 -63 -6 -72 -5 -69 9 2 8 9 14 17 12 20 -5 110 18 150 38 25 13 49 17 82 13 36 -4 57 0 88 16 22 11 57 21 78 21 20 1 60 7 87 14 l50 14 17 -55 c10 -30 15 -59 12 -64z m-1047 55 c3 -8 1 -20 -4 -25 -7 -7 -12 -2 -15 15 -6 28 9 36 19 10z m62 -28 c15 -8 34 -23 42 -32 8 -11 9 -15 2 -10 -7 4 -31 2 -54 -4 -22 -6 -43 -10 -45 -7 -4 4 18 67 24 67 2 0 15 -6 31 -14z m379 -28 c-13 -19 -26 -23 -88 -26 -57 -3 -71 -1 -68 10 4 11 92 33 152 37 17 1 17 -1 4 -21z m-188 -23 c0 -10 -11 -15 -35 -15 -41 0 -47 17 -7 23 15 2 30 5 35 6 4 0 7 -6 7 -14z m-110 -15 c0 -5 -13 -10 -29 -10 -16 0 -44 -3 -62 -6 -24 -5 -31 -3 -24 4 17 18 115 28 115 12z m-152 -14 c-7 -8 -15 -12 -17 -11 -5 6 10 25 20 25 5 0 4 -6 -3 -14z m412 0 c0 -14 -106 -93 -114 -85 -8 7 6 89 14 84 5 -3 83 8 98 14 1 1 2 -5 2 -13z m-154 -52 c-2 -40 -16 -63 -37 -64 -4 0 -9 18 -13 39 -3 22 -9 46 -12 55 -5 13 1 16 30 16 l35 0 -3 -46z m-104 -6 c3 -24 4 -44 2 -46 -8 -10 -104 61 -104 77 0 3 22 7 49 9 l49 2 4 -42z m32 -86 c-17 -16 -17 -16 -5 1 11 14 11 17 -2 17 -10 0 -14 6 -11 15 5 13 8 13 21 -1 14 -14 14 -17 -3 -32z"/>
+          <path d="M908 1423 c6 -2 18 -2 25 0 6 3 1 5 -13 5 -14 0 -19 -2 -12 -5z"/><path d="M946 1297 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z"/><path d="M811 1144 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/>
+          <path d="M726 1492 c-3 -5 1 -9 9 -9 8 0 12 4 9 9 -3 4 -7 8 -9 8 -2 0 -6 -4 -9 -8z"/><path d="M726 1462 c-3 -5 1 -9 9 -9 8 0 12 4 9 9 -3 4 -7 8 -9 8 -2 0 -6 -4 -9 -8z"/>
+          <path d="M1156 1407 c3 -10 9 -15 12 -12 3 3 0 11 -7 18 -10 9 -11 8 -5 -6z"/><path d="M2245 1249 c-4 -6 -5 -12 -2 -15 2 -3 7 2 10 11 7 17 1 20 -8 4z"/><path d="M2234 1175 c-9 -22 2 -41 25 -48 16 -4 21 0 21 13 0 45 -33 70 -46 35z"/>
+          <path d="M2299 1113 c-13 -16 -12 -17 4 -4 9 7 17 15 17 17 0 8 -8 3 -21 -13z"/><path d="M2856 1091 c-12 -5 -15 -10 -9 -14 6 -4 16 0 23 8 14 17 13 17 -14 6z"/><path d="M1348 1073 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z"/>
+          <path d="M2650 1069 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10 -5 -10 -11z"/><path d="M1247 947 c-3 -8 1 -14 8 -14 7 0 11 6 8 14 -3 7 -6 13 -8 13 -2 0 -5 -6 -8 -13z"/><path d="M1658 913 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z"/>
+          <path d="M1281 873 c-1 -17 16 -25 25 -12 4 7 3 9 -4 5 -5 -3 -13 0 -15 6 -4 9 -6 10 -6 1z"/><path d="M2817 839 c4 -13 9 -17 15 -11 11 11 3 32 -12 32 -4 0 -6 -9 -3 -21z"/><path d="M2864 819 c-3 -6 -2 -15 3 -20 5 -5 9 -1 9 11 0 23 -2 24 -12 9z"/><path d="M401 804 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/><path d="M1820 809 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10 -5 -10 -11z"/>
+          <path d="M2286 785 c-9 -26 -7 -32 5 -12 6 10 9 21 6 23 -2 3 -7 -2 -11 -11z"/><path d="M1338 643 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z"/><path d="M357 559 c7 -7 15 -10 18 -7 3 3 -2 9 -12 12 -14 6 -15 5 -6 -5z"/>
+          <path d="M690 561 c0 -6 4 -13 10 -16 6 -3 7 1 4 9 -7 18 -14 21 -14 7z"/><path d="M1083 553 c0 -17 5 -16 23 1 12 13 12 15 -4 13 -10 0 -19 -7 -19 -14z"/><path d="M565 529 c-4 -6 -5 -12 -2 -15 2 -3 7 2 10 11 7 17 1 20 -8 4z"/><path d="M431 364 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/>
+        </g>
+      </svg>
+      <div class="signature-box">Chief Executive Sign</div>
     </div>
     <div style="margin-top:60px; font-size:10px; color:#666;">Date: <span id="certDate"></span> | ID: BXL-DE-9923</div>
   </div>
 </div>
 <script>
 const dataSet = [
-  { q: "Difference between a Data Scientist and a Data Analyst?", o: ["Scientists report; Analysts code", "Scientists build predictive models; Analysts interpret history", "Analysts handle Big Data", "No difference"], a: 1 },
-  { q: "What is Batch Processing?", o: ["Processing one by one", "Processing data in groups at scheduled intervals", "Low-latency processing", "Manual entry"], a: 1 },
-  { q: "Difference between Batch and Streaming?", o: ["Batch is real-time", "Batch processes bounded data; Streaming processes unbounded", "Streaming uses more storage", "Batch is only for local"], a: 1 },
-  { q: "Difference between MySQL and PostgreSQL?", o: ["MySQL is NoSQL", "PostgreSQL supports advanced types; MySQL is simpler", "MySQL is for Windows only", "PostgreSQL is for read-heavy"], a: 1 },
+  { q: "Difference between a Data Scientist and a Data Analyst?", o: ["Scientists report; Analysts code", "Scientists build models; Analysts interpret history", "Analysts handle Big Data", "No difference"], a: 1 },
+  { q: "What is Batch Processing?", o: ["Processing one by one", "Processing data in groups at scheduled intervals", "Low-latency", "Manual entry"], a: 1 },
+  { q: "Difference between Batch and Streaming?", o: ["Batch is real-time", "Batch processes bounded data; Streaming processes unbounded", "Streaming uses more storage", "Batch is only local"], a: 1 },
+  { q: "Difference between MySQL and PostgreSQL?", o: ["MySQL is NoSQL", "PostgreSQL supports advanced types; MySQL is simpler", "MySQL is Windows only", "PostgreSQL is for read-heavy"], a: 1 },
   { q: "File Organization in Indexing?", o: ["How records are placed on disk", "Number of users", "Color coding", "Language used"], a: 0 },
   { q: "Install NumPy command?", o: ["get install numpy", "npm install", "pip install numpy", "python -m add"], a: 2 },
   { q: "Difference between CSV and JSON?", o: ["CSV is tabular; JSON is key-value", "JSON is numbers only", "CSV is secure", "JSON is not for Python"], a: 0 },
@@ -164,14 +176,10 @@ function takeScreenshot() {
 // BRAVYNEX ENGINEERING LLP - INTERNAL SECURITY AUDIT 2026
 // VERIFIED BY SYSTEM: TESLA
 // LOCAL ASSET LINKED: pic.jpeg
-// --------------------------------------------------------------------------
 // [AUDIT LOG START]
 // Session ID: DE-2026-X72-KARNATAKA
 // Candidate Verified: Sherlock (Chinnu)
-// Security Layer: Active
-// Asset Status: pic.jpeg linked from /home/tesla/Pictures/
-// Deployment Status: Localhost Testing
-// Features: Screenshot Capability Added (html2canvas)
+// Features: SVG Chief Executive Signature Integrated
 // [AUDIT LOG END]
 // --------------------------------------------------------------------------
 </script>
